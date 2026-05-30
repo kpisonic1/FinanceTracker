@@ -4,16 +4,6 @@ A full-stack AI-powered personal finance tracking application built with React a
 
 ---
 
-## Features
-
-- **Add transactions** — log expenses with description, amount, category, and date
-- **AI category suggestion** — as you type a description, the app automatically suggests the most likely category using a trained ML model (falls back to keyword-based rules if the model isn't trained yet)
-- **Monthly spend by category** — view a breakdown of your spending for any selected month
-- **Next month forecast** — predicts next month's spending per category using a weighted average of the last 3 months, with trend indicators
-- **Train the ML model** — the category classifier can be retrained directly from your own transaction history via the API
-
----
-
 ## Tech Stack
 
 **Frontend**
@@ -32,32 +22,7 @@ A full-stack AI-powered personal finance tracking application built with React a
 
 ---
 
-## Project Structure
-
-```
-project/
-├── backend/
-│   └── app/
-│       ├── main.py          # FastAPI app, all routes
-│       ├── models.py        # SQLAlchemy database models
-│       ├── schemas.py       # Pydantic request/response schemas
-│       ├── crud.py          # Database operations
-│       ├── db.py            # Database connection and session setup
-│       ├── ml.py            # ML model training, loading, prediction
-│       └── ml_models/
-│           └── category_model.joblib  # Saved ML model (auto-generated)
-└── frontend/
-    └── src/
-        ├── App.js           # Main React app, all pages and components
-        ├── App.css          # Styles
-        └── index.js         # React entry point
-```
-
----
-
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - Python 3.10+
 - Node.js 18+
